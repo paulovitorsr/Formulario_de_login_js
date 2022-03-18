@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="images/financial_data.png" alt="" />
+        </div>
+        <div class="rightside">
+            <h1>Tela de Login</h1>
+
+            <form method="POST" action="cadastro.php" class="b7validator">
+                <label>
+                    Seu e-mail:<br/>
+                    <input type="text" name="email" data-rules="required|email" />
+                </label>
+                <label>
+                    Sua senha:<br/>
+                    <input type="password" name="password" data-rules="min=8" />
+                </label>
+                <label>
+                    <input type="submit" value="Entrar" />
+                </label>
+            </form>
+
+            <div>
+                Não tem uma conta? <a href="index.html">Faça o seu cadastro</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
